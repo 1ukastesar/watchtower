@@ -1,9 +1,7 @@
 services:
   watchtower:
     container_name: watchtower
-    environment:
-      DOCKER_API_VERSION: 1.49
-    image: containrrr/watchtower
+    image: nickfedor/watchtower:latest
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: always
